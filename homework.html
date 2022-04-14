@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Weather</title>
+        <meta charset="UTF-8">
         <style>
             html
             {
@@ -65,7 +66,7 @@
         </style>
     </head>
     <body>
-        <h1>⛅</br> Currently 18° in London</h1>
+        <h1>⛅</br> Currently 18°C in London</h1>
         <h2>8° /<strong> 18° </strong></h2>
         <div class="main">
             🌤   Tommorow
@@ -83,5 +84,35 @@
         <div class="data">
             Coded by Viktoriia Rybalka
         </div>
+        <script>
+        
+            function updateh1(newh1)
+            {
+                var h1 = document.querySelector("h1");
+                h1.innerHTML=newh1;
+            }
+            
+            function temp_def(temp)
+            {
+                return temp>=0;
+            }
+            
+            function h1change()
+            {
+                let city = prompt("What city are you from?: ");    
+                var temp = prompt(`Temperature in ${city}: `);                
+                if(temp_def(temp))
+                {
+                    updateh1(`🌞<br>Currently ${temp}°C in ${city}`);
+                }else
+                {
+                    updateh1(`🥶<br>Currently ${temp}°C in ${city}`);
+                }
+            }
+            
+            var apply=document.querySelector("button");
+            
+            apply.addEventListener("click", h1change);
+        </script>
     </body>
 </html>
