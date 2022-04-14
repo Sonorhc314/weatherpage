@@ -1,0 +1,59 @@
+            html
+            {
+                font-family:Helvetica;
+                font-weight: 400;
+            }
+            h1
+            {
+                text-align:center;
+                color:#1A64D6;
+                font-size:28px;
+            }
+            h2
+            {
+                text-align:center;
+                font-size:25px;
+                font-weight: 400;
+            }
+            .main
+            {
+                font-weight:bold;
+                font-size:18px;
+                text-align:center;
+                margin: 0px 500px;
+                padding: 30px 50px;
+                border-radius: 20px;
+                transition: all 200ms ease-in-out;
+            }
+            .main:hover
+            {
+                background:#FFFBEF;
+            }
+            .data
+            {
+                text-align:center;
+                color:#5F5F5F;
+                padding: 15px 0px;
+            }
+            button
+            {
+                margin:0 auto;
+                padding:20px 25px;
+                border-radius: 30px;
+                display:block;
+                color:white;
+                background:#1A64D6;
+                transition: all 200ms ease-in-out;
+                border:1px solid #1A64D6;
+            }
+            button:hover
+            {
+                pointer:cursor;
+                color:#1A64D6;
+                background:white;
+                cursor:pointer;
+            }
+            .normal
+            {
+                font-weight: normal;
+            }
